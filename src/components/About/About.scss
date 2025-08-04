@@ -1,0 +1,13 @@
+.hover-blue {
+  background: linear-gradient(to right, #ff9800 50%, #537ed2 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  color: white;
+  transition: background-position 0.4s ease;
+  border: none;
+}
+
+.hover-blue:hover {
+  background-position: right bottom;
+  color: #fff !important;
+}

@@ -191,7 +191,172 @@
   opacity: 1;
 }
 
+.curved-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+.curved-cards-container {
+  perspective: 1000px;
+}
+
+.curved-card {
+  transform-style: preserve-3d;
+}
+
+.curved-0 {
+  transform: translateY(40px) scale(0.85) rotateX(10deg);
+}
+.curved-1 {
+  transform: translateY(20px) scale(0.92) rotateX(5deg);
+}
+.curved-2 {
+  transform: translateY(0px) scale(1) rotateX(0deg);
+}
+.curved-3 {
+  transform: translateY(20px) scale(0.92) rotateX(5deg);
+}
+.curved-4 {
+  transform: translateY(40px) scale(0.85) rotateX(10deg);
+}
 
 
+/* Section animation */
+.animate-section {
+  animation: fadeInBg 1.5s ease-in-out;
+}
 
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Left text fade */
+.fade-in-left {
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Right content fade */
+.fade-in-up {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cards stagger effect */
+.fade-in-card {
+  animation: fadeInCard 1s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.fade-in-card:nth-child(1) { animation-delay: 0.2s; }
+.fade-in-card:nth-child(2) { animation-delay: 0.4s; }
+.fade-in-card:nth-child(3) { animation-delay: 0.6s; }
+.fade-in-card:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hover animation for cards */
+.card-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card-animate:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+// Product Card
+.product-card {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  transform: scale(1) translateX(0);
+  transition: transform 0.8s cubic-bezier(0.25, 1.25, 0.5, 1), filter 0.5s ease;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.35);
+}
+
+.product-overlay h5 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  z-index: 2;
+}
+
+.product-desc,
+.product-overlay .btn {
+  opacity: 0;
+  transform: translateX(-100px) scale(0.95);
+  transition: all 0.6s ease;
+  transition-delay: 0.15s;
+}
+
+.product-card:hover .product-bg {
+  transform: scale(1.2);
+  filter: brightness(0.4) blur(3px);
+}
+
+.product-card:hover .product-desc,
+.product-card:hover .btn {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
 

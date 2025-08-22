@@ -1,11 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import TestimonialComp from '../Testimonial/TestimonialComp';
 import { base_url } from '../../config';
+import { Link, useNavigate } from "react-router-dom";
 
-const InsureTechComp = () => {
-  const navigate = useNavigate();
-
+const RetailSolutionComp = () => {
   return (
     <>
       {/* Navbar Start */}
@@ -69,13 +66,13 @@ const InsureTechComp = () => {
         >
           <div className="row py-5">
             <div className="col-12 pt-lg-5 mt-lg-5 text-center">
-              <h1 className="display-4 text-white animated zoomIn">Insurtech</h1>
+              <h1 className="display-4 text-white animated zoomIn">Retail Solution</h1>
               <a href="#" className="h5 text-white">
                 Home
               </a>
               <i className="far fa-circle text-white px-2"></i>
               <a href="#" className="h5 text-white">
-                Insurtech
+                Retail Solution
               </a>
             </div>
           </div>
@@ -92,28 +89,28 @@ const InsureTechComp = () => {
               <div className="mb-5">
                 <img
                   className="img-fluid w-100 rounded mb-5"
-                  src={`${base_url}/assets/img/Services/InsureTech/InsureTech.jpg`}
-                  alt="Blog"
-                  style={{
-                    height: "400px",
-                    objectFit: "cover",
-                    maxHeight: "100%",
-                  }}
+                  src={`${base_url}/assets/img/Services/Technology/Technology.jpg`}
+                  alt="Blog" style={{ height: "400px" }}
                 />
                 <h1 className="mb-4">
-                  Insurtech
+                  Retail Solution
                 </h1>
                 <p>
-                  <span className='text-dark fw-bold'>Welcome to ZoyaMe,</span> a leading Insurtech company that is transforming the insurance industry through the use of cutting-edge technology.
+                  <span className='text-dark fw-bold'>Welcome to ZoyaMe Retail Solutions,</span> where we empower retailers with
+                  technology-driven strategies to enhance customer experiences, streamline operations, and
+                  maximize profitability. Our focus is to help businesses stay competitive in today’s fast-changing retail environment.
                 </p>
                 <p>
-                  We offer a wide range of insurance products and services, including our Employee Benefits Solution, Affinity Solution, Flex Solution, and Rewards Programme. Our mission is to provide innovative and cost-effective insurance solutions that meet the evolving needs of modern consumers.
+                  From smart point-of-sale systems, digital payment integrations, and inventory management
+                  to personalized customer engagement and loyalty programs, we deliver end-to-end retail
+                  technology solutions. Our expertise helps retailers create seamless omni-channel experiences
+                  that connect in-store and online journeys.
                 </p>
                 <p>
-                  Our Employee Benefits Solution is designed to help companies of all sizes provide their employees with comprehensive and customisable insurance plans. We use advanced analytics to create personalized benefit packages that fit each employee's unique needs while minimizing costs for the employer.
-                </p>
-                <p>
-                  Our Affinity Solution allows organizations to offer exclusive insurance products and services to their members or customers. We work with affinity groups to create tailored insurance plans that are designed to meet the specific needs of their members or customers.
+                  With advanced data analytics, AI-driven insights, and automation, we enable retailers to
+                  understand consumer behavior, optimize supply chains, and make informed business
+                  decisions. At ZoyaMe, our goal is to transform retail operations into agile, customer-centric
+                  ecosystems that drive growth and long-term success.
                 </p>
 
               </div>
@@ -143,12 +140,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseOne"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>What is Insurtech Solutions?</span>
+                        <span style={{fontSize:'18px'}}>What is ZoyaMe’s Retail Insurance Solution?</span>
                       </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        Insurtech Solutions use technology to automate and improve insurance processes like quoting, policy issuance, lead management, and commission tracking.                      
+                       It’s a toolkit for retailers to offer and manage embedded insurance (e.g., gadget cover, extended warranty, transit insurance) at checkout—online and in-store—plus post-sale policy/claims support.                     
                       </div>
                     </div>
                   </div>
@@ -165,12 +162,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseTwo"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>What makes ZoyaMe’s Insurtech different?</span>
+                        <span style={{fontSize:'18px'}}>How do returns/exchanges affect insurance?</span>
                       </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        ZoyaMe’s Insurtech solutions stand out for their modular design, ease of integration, and end-to-end automation. We don’t just digitize insurance—we personalize it. Our platform is tailored for flexibility, enabling insurers to launch, manage, and scale insurance operations with minimal manual effort and maximum efficiency.
+                       We auto-cancel or reissue policies based on return/exchange flows and notify the insurer, with premium adjustments handled in settlement.
                       </div>
                     </div>
                   </div>
@@ -187,12 +184,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseThree"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>How secure is ZoyaMe’s Insurtech platform?</span>
+                        <span style={{fontSize:'18px'}}>What security measures are in place?</span>
                       </button>
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        Security is a top priority at ZoyaMe. Our platform uses enterprise-grade encryption, multi-factor authentication, and regular security audits to protect sensitive customer and business data. Compliance with global data protection standards like GDPR and ISO ensures robust, secure operations across all modules.
+                       Role-based access, data encryption, audit trails, PII minimization, and compliance with relevant data protection requirements.
                       </div>
                     </div>
                   </div>
@@ -209,12 +206,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseFour"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>Who can benefit from ZoyaMe’s Insurtech solutions?</span>
+                        <span style={{fontSize:'18px'}}>How are premiums and commissions handled?</span>
                       </button>
                     </h2>
                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        ZoyaMe’s solutions are built for insurers, brokers, TPAs, and affinity groups of all sizes. Whether you're a startup, a mid-sized agency, or an enterprise-level insurer, our tools are designed to scale with your needs and enhance operational agility and customer satisfaction.
+                        Premiums are auto-calculated based on SKU/price/risk rules. Commissions and revenue share are tracked per store/channel with finance-ready settlement reports.
                       </div>
                     </div>
                   </div>
@@ -238,14 +235,13 @@ const InsureTechComp = () => {
                   <span className='h5 text-white'>Request a Demo</span>
                 </a>
               </div>
-
             </div>
           </div>
         </div>
       </div>
       {/* About Us Section End */}
 
-      {/* Our Solution Start */}
+      {/* Our Solutions Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div
@@ -256,24 +252,26 @@ const InsureTechComp = () => {
               Our Solutions
             </h5>
             <h3 className="mb-0">
-              Insurtech solutions includes wide range product lines, Please take look at it.
+              Our Analytics tool have capabilities to handle millions of data and process based on which we provide below features.
+
             </h3>
           </div>
           <div className="row g-5">
             <div className="col-lg-12">
               <div className="row g-5">
                 {/* Solution 1 */}
-                <div className="col-md-4 wow slideInUp " data-wow-delay="0.1s" >
+                <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s" >
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Quote Management System" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/ecommerce-01.jpg`} alt="Digital Insurance Mall for Individuals" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Quote Management System
+                        Digital Insurance Mall for Individuals
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Generate instant, accurate quotes using a dynamic rule engine.</h4>
-                      <p>Our Quote Management System empowers insurers and agents to create fast, accurate, and customizable insurance quotes using a dynamic rule engine. It simplifies the quoting process by automating complex calculations, ensuring compliance, and delivering real-time pricing—enhancing customer experience and operational efficiency.</p>
+                      <h4 className="mb-3">Personalized Insurance at Your Fingertips</h4>
+                      <p>The Digital Insurance Mall is a one-stop platform where individuals can explore, compare, and purchase insurance products instantly. From health, travel, life, and motor insurance to lifestyle protection plans, our digital-first approach ensures transparency, convenience, and tailored solutions. 
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -282,14 +280,18 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.6s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Policy Placement & Issuance" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/enterpriseProtal-02.jpg`} alt="AI-Driven Product Matching" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Policy Placement & Issuance
+                        AI-Driven Product Matching
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Seamlessly issue and manage policies across insurers and TPAs.</h4>
-                      <p> Our Policy Placement & Issuance solution streamlines the end-to-end process of policy creation, placement, and distribution. By integrating directly with insurers and Third-Party Administrators (TPAs), we enable seamless policy issuance, real-time status tracking, efficient documentation, and enhanced operational efficiency.</p>
+                      <h4 className="mb-3">Smarter Insurance with AI Matching</h4>
+                      <p>
+                        Our AI-powered engine simplifies decision-making by connecting individuals with the most suitable 
+                        insurance plans. By analyzing lifestyle, financial needs, and health profiles, it delivers accurate 
+                        product recommendations that reduce confusion and improve customer satisfaction. 
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -298,14 +300,18 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Lead Management System" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/serverManagement-03.jpg`} alt="Paperless Policy Issuance" />
                       <a className="position-absolute top-0 start-0  text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Lead Management System
+                        Paperless Policy Issuance
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Capture, track, and convert leads with analytics-driven engagement.</h4>
-                      <p>Our Lead Management System empowers your sales and marketing teams to seamlessly capture leads from multiple channels, track their interactions in real time, and nurture them through personalized, data-driven engagement for higher conversion rates and improved customer relationship and retention management.</p>
+                      <h4 className="mb-3">Seamless Paperless Policy Issuance</h4>
+                      <p>
+                        Eliminate delays and manual errors with our fully digital policy issuance system. Customers can receive 
+                        instant policies online, complete with secure e-signatures and automated documentation. This streamlined 
+                        approach reduces paperwork, enhances transparency, and ensures a faster onboarding experience.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -316,14 +322,18 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Invoice & Commission Module" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/softwareSupport-04.jpg`} alt="Renewal & Claims Tracking Tools" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Invoice & Commission Module
+                        Renewal & Claims Tracking Tools
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Automate premium and commission calculations with built-in invoicing tools.</h4>
-                      <p> The Invoice & Commission Module simplifies financial operations by automating premium billing, commission tracking, and invoice generation. With seamless integration into your insurance workflows, this module ensures accuracy, transparency, and timely payments for agents, brokers, and partners — all from a single dashboard.</p>
+                      <h4 className="mb-3">Simplified Renewals & Claims Tracking</h4>
+                      <p>
+                        Empower customers with easy-to-use digital tools that simplify policy renewals and provide real-time 
+                        claims tracking. With automated reminders, transparent claim status updates, and secure online access, 
+                        the process becomes hassle-free. This improves customer trust, engagement, and long-term satisfaction.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -336,101 +346,101 @@ const InsureTechComp = () => {
 
       {/* Team Members Start */}
       {/* <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div
-            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-            style={{ maxWidth: 600 }}
-          >
-            <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
-            <h1 className="mb-0">
-              Professional Stuffs Ready to Help Your Business
-            </h1>
-          </div>
-
-          <div className="row g-5">
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-1.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
+            <div className="container py-5">
+              <div
+                className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                style={{ maxWidth: 600 }}
+              >
+                <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
+                <h1 className="mb-0">
+                  Professional Stuffs Ready to Help Your Business
+                </h1>
+              </div>
+    
+              <div className="row g-5">
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-1.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
                   </div>
                 </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
+    
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-2.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-3.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-2.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-3.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+          </div> */}
       {/* Team Member End */}
     </>
   )
 }
 
-export default InsureTechComp
+export default RetailSolutionComp

@@ -1,11 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import TestimonialComp from '../Testimonial/TestimonialComp';
 import { base_url } from '../../config';
+import { Link, useNavigate } from "react-router-dom";
 
-const InsureTechComp = () => {
-  const navigate = useNavigate();
-
+const EmployeeBenefitComp = () => {
   return (
     <>
       {/* Navbar Start */}
@@ -69,13 +66,13 @@ const InsureTechComp = () => {
         >
           <div className="row py-5">
             <div className="col-12 pt-lg-5 mt-lg-5 text-center">
-              <h1 className="display-4 text-white animated zoomIn">Insurtech</h1>
+              <h1 className="display-4 text-white animated zoomIn">Employee Benefits Platform(ZoyaCube)</h1>
               <a href="#" className="h5 text-white">
                 Home
               </a>
               <i className="far fa-circle text-white px-2"></i>
               <a href="#" className="h5 text-white">
-                Insurtech
+                Employee Benefits
               </a>
             </div>
           </div>
@@ -83,41 +80,37 @@ const InsureTechComp = () => {
       </div>
       {/* Navbar End */}
 
+
       {/* About Us Section Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-8">
-              {/* Blog Detail Start */}
               <div className="mb-5">
                 <img
                   className="img-fluid w-100 rounded mb-5"
-                  src={`${base_url}/assets/img/Services/InsureTech/InsureTech.jpg`}
-                  alt="Blog"
-                  style={{
-                    height: "400px",
-                    objectFit: "cover",
-                    maxHeight: "100%",
-                  }}
+                  src={`${base_url}/assets/img/Services/Technology/Technology.jpg`}
+                  alt="Blog" style={{ height: "400px" }}
                 />
                 <h1 className="mb-4">
-                  Insurtech
+                  Employee Benefits Platform(ZoyaCube)
                 </h1>
                 <p>
-                  <span className='text-dark fw-bold'>Welcome to ZoyaMe,</span> a leading Insurtech company that is transforming the insurance industry through the use of cutting-edge technology.
+                  <span className='text-dark fw-bold'>ZoyaCube</span> is more than just an employee benefits tool — it's a strategic platform built to elevate workforce well-being, simplify HR processes, and empower data-driven decision-making.
                 </p>
                 <p>
-                  We offer a wide range of insurance products and services, including our Employee Benefits Solution, Affinity Solution, Flex Solution, and Rewards Programme. Our mission is to provide innovative and cost-effective insurance solutions that meet the evolving needs of modern consumers.
+                  Designed by ZoyaMe, ZoyaCube helps organizations deliver personalized, flexible, and meaningful benefits to employees at every stage of their journey. Whether it's health insurance, wellness perks, rewards, or voluntary benefits, ZoyaCube brings everything together in one smart, secure, and intuitive interface.
                 </p>
                 <p>
-                  Our Employee Benefits Solution is designed to help companies of all sizes provide their employees with comprehensive and customisable insurance plans. We use advanced analytics to create personalized benefit packages that fit each employee's unique needs while minimizing costs for the employer.
+                  With built-in analytics, automation, and seamless integrations, ZoyaCube reduces administrative load, enhances employee engagement, and ensures compliance — all while keeping your team connected and cared for. It's the future of benefits, reimagined for modern workforces.
                 </p>
                 <p>
-                  Our Affinity Solution allows organizations to offer exclusive insurance products and services to their members or customers. We work with affinity groups to create tailored insurance plans that are designed to meet the specific needs of their members or customers.
+                  ZoyaCube adapts to the unique needs of startups, SMEs, and large enterprises alike, offering scalable features that grow with your organization. Its modular design allows HR teams to configure offerings based on business objectives, employee demographics, or evolving policy structures.
                 </p>
-
+                <p>
+                  By unifying employee data, claims tracking, communication, and benefits administration in one digital ecosystem, ZoyaCube empowers leadership to make smarter decisions and build a culture of trust, care, and transparency.
+                </p>
               </div>
-              {/* Blog Detail End */}
             </div>
             <div className="col-lg-4">
               {/* FAQ Accordion */}
@@ -143,12 +136,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseOne"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>What is Insurtech Solutions?</span>
+                        <span style={{fontSize:'18px'}}>What is ZoyaCube?</span>
                       </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        Insurtech Solutions use technology to automate and improve insurance processes like quoting, policy issuance, lead management, and commission tracking.                      
+                        ZoyaCube is ZoyaMe’s integrated Employee Benefits Platform designed to streamline and personalize the way organizations manage, distribute, and optimize employee benefit programs across insurance, wellness, rewards, and more.
                       </div>
                     </div>
                   </div>
@@ -165,12 +158,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseTwo"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>What makes ZoyaMe’s Insurtech different?</span>
+                        <span style={{fontSize:'18px'}}>What features does ZoyaCube offer?</span>
                       </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        ZoyaMe’s Insurtech solutions stand out for their modular design, ease of integration, and end-to-end automation. We don’t just digitize insurance—we personalize it. Our platform is tailored for flexibility, enabling insurers to launch, manage, and scale insurance operations with minimal manual effort and maximum efficiency.
+                        ZoyaCube offers employee-centric features like digital insurance management, benefits personalization, claim tracking, wellness rewards, real-time analytics, and HR automation — all accessible from a single dashboard.
                       </div>
                     </div>
                   </div>
@@ -187,12 +180,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseThree"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>How secure is ZoyaMe’s Insurtech platform?</span>
+                        <span style={{fontSize:'18px'}}>Is ZoyaCube customizable for different organizations?</span>
                       </button>
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        Security is a top priority at ZoyaMe. Our platform uses enterprise-grade encryption, multi-factor authentication, and regular security audits to protect sensitive customer and business data. Compliance with global data protection standards like GDPR and ISO ensures robust, secure operations across all modules.
+                        Yes, ZoyaCube is built with modularity in mind. It allows HR teams to tailor benefit structures, employee access, and platform workflows based on the unique needs of startups, SMEs, or large enterprises.
                       </div>
                     </div>
                   </div>
@@ -209,12 +202,12 @@ const InsureTechComp = () => {
                         aria-controls="collapseFour"
                         style={{ backgroundColor:'#E1D8D6' }}
                       >
-                        <span style={{fontSize:'18px'}}>Who can benefit from ZoyaMe’s Insurtech solutions?</span>
+                        <span style={{fontSize:'18px'}}>How secure is the ZoyaCube platform?</span>
                       </button>
                     </h2>
                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                       <div className="accordion-body text-muted">
-                        ZoyaMe’s solutions are built for insurers, brokers, TPAs, and affinity groups of all sizes. Whether you're a startup, a mid-sized agency, or an enterprise-level insurer, our tools are designed to scale with your needs and enhance operational agility and customer satisfaction.
+                        ZoyaCube ensures enterprise-grade data security with encryption, multi-layered authentication, and regular compliance audits. It adheres to GDPR, ISO, and industry-specific standards to keep user and organizational data safe.
                       </div>
                     </div>
                   </div>
@@ -238,7 +231,6 @@ const InsureTechComp = () => {
                   <span className='h5 text-white'>Request a Demo</span>
                 </a>
               </div>
-
             </div>
           </div>
         </div>
@@ -256,24 +248,24 @@ const InsureTechComp = () => {
               Our Solutions
             </h5>
             <h3 className="mb-0">
-              Insurtech solutions includes wide range product lines, Please take look at it.
+              Our Analytics tool is built to handle millions of data points efficiently, enabling us to deliver the following powerful features.
             </h3>
           </div>
           <div className="row g-5">
             <div className="col-lg-12">
               <div className="row g-5">
                 {/* Solution 1 */}
-                <div className="col-md-4 wow slideInUp " data-wow-delay="0.1s" >
+                <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s" >
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Quote Management System" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/ecommerce-01.jpg`} alt="Custom Flex Benefits Design" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Quote Management System
+                        Custom Flex Benefits Design
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Generate instant, accurate quotes using a dynamic rule engine.</h4>
-                      <p>Our Quote Management System empowers insurers and agents to create fast, accurate, and customizable insurance quotes using a dynamic rule engine. It simplifies the quoting process by automating complex calculations, ensuring compliance, and delivering real-time pricing—enhancing customer experience and operational efficiency.</p>
+                      <h4 className="mb-3">Tailored, Personalized & Innovative Flex Benefits Programs</h4>
+                      <p>Our Custom Flex Benefits Design allows organizations to tailor benefit packages to individual employee needs, offering greater choice, control, and satisfaction — all while optimizing cost, compliance, and administrative efficiency across the organization.</p>
                     </div>
                   </div>
                 </div>
@@ -282,14 +274,14 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.6s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Policy Placement & Issuance" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/enterpriseProtal-02.jpg`} alt="HRMS Integration" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Policy Placement & Issuance
+                        HRMS Integration
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Seamlessly issue and manage policies across insurers and TPAs.</h4>
-                      <p> Our Policy Placement & Issuance solution streamlines the end-to-end process of policy creation, placement, and distribution. By integrating directly with insurers and Third-Party Administrators (TPAs), we enable seamless policy issuance, real-time status tracking, efficient documentation, and enhanced operational efficiency.</p>
+                      <h4 className="mb-3">Seamlessly connect your Employee Benefits Platform with existing HR systems.</h4>
+                      <p>Our HRMS Integration enables smooth data sync between your HR system and ZoyaCube, reducing manual entry, minimizing errors, and keeping records updated. It streamlines processes like enrollment, eligibility checks, and updates for efficient HR and benefits administration.</p>
                     </div>
                   </div>
                 </div>
@@ -298,14 +290,19 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Lead Management System" />
-                      <a className="position-absolute top-0 start-0  text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Lead Management System
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/serverManagement-03.jpg`} alt="Employee Self-Service Portal" />
+                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
+                        Employee Self-Service Portal
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Capture, track, and convert leads with analytics-driven engagement.</h4>
-                      <p>Our Lead Management System empowers your sales and marketing teams to seamlessly capture leads from multiple channels, track their interactions in real time, and nurture them through personalized, data-driven engagement for higher conversion rates and improved customer relationship and retention management.</p>
+                      <h4 className="mb-3">Simplify benefit access with a smart, intuitive self-service experience.</h4>
+                      <p>
+                        Empower employees with a unified platform to explore and manage their benefits anytime. 
+                        From accessing policies and submitting claims to updating details and tracking requests, 
+                        our portal reduces HR dependency, improves transparency, and delivers a seamless experience 
+                        across web and mobile.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -316,14 +313,35 @@ const InsureTechComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/ecommerce.jpg`} alt="Invoice & Commission Module" />
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/softwareSupport-04.jpg`} alt="TPA/Insurer Sync & Real-Time Claims View" />
                       <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
-                        Invoice & Commission Module
+                        TPA/Insurer Sync & Real-Time Claims View
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Automate premium and commission calculations with built-in invoicing tools.</h4>
-                      <p> The Invoice & Commission Module simplifies financial operations by automating premium billing, commission tracking, and invoice generation. With seamless integration into your insurance workflows, this module ensures accuracy, transparency, and timely payments for agents, brokers, and partners — all from a single dashboard.</p>
+                      <h4 className="mb-3">Seamless TPA & Insurer Integration for Real-Time Claims Management</h4>
+                      <p>
+                        Streamline claim management with real-time synchronization between TPAs and insurers. 
+                        Our solution ensures accurate data exchange, faster claim updates, and complete visibility 
+                        into claim status. Empower HR teams and employees with transparency, efficiency, and 
+                        reduced turnaround times.
+                      </p>                    
+                    </div>
+                  </div>
+                </div>
+
+                {/* Solution 5 */}
+                <div className="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+                  <div className="blog-item bg-light rounded overflow-hidden">
+                    <div className="blog-img position-relative overflow-hidden">
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/reEngineering-05.jpg`} alt="Wellness & Health Partner Integrations" />
+                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="#" style={{ backgroundColor: "#ff9800" }}>
+                        Wellness & Health Partner Integrations
+                      </a>
+                    </div>
+                    <div className="p-4">
+                      <h4 className="mb-3">Comprehensive Wellness & Health Partner Integrations</h4>
+                      <p>Empower your workforce with a unified platform linking benefits to wellness and healthcare partners. From gyms, apps, telemedicine, and health check-ups to nutrition and mental wellness, our integrations support holistic well-being. By aligning health and benefits, organizations boost engagement, productivity, and a culture of care.</p>
                     </div>
                   </div>
                 </div>
@@ -336,101 +354,101 @@ const InsureTechComp = () => {
 
       {/* Team Members Start */}
       {/* <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div
-            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-            style={{ maxWidth: 600 }}
-          >
-            <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
-            <h1 className="mb-0">
-              Professional Stuffs Ready to Help Your Business
-            </h1>
-          </div>
-
-          <div className="row g-5">
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-1.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
+            <div className="container py-5">
+              <div
+                className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                style={{ maxWidth: 600 }}
+              >
+                <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
+                <h1 className="mb-0">
+                  Professional Stuffs Ready to Help Your Business
+                </h1>
+              </div>
+    
+              <div className="row g-5">
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-1.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
                   </div>
                 </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
+    
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-2.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                  <div className="team-item bg-light rounded overflow-hidden">
+                    <div className="team-img position-relative overflow-hidden">
+                      <img className="img-fluid w-100" src="/assets/img/team-3.jpg" alt="" />
+                      <div className="team-social">
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-twitter fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
+                          <i className="fab fa-linkedin-in fw-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="text-center py-4">
+                      <h4 className="text-primary">Full Name</h4>
+                      <p className="text-uppercase m-0">Designation</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-2.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden">
-                  <img className="img-fluid w-100" src="/assets/img/team-3.jpg" alt="" />
-                  <div className="team-social">
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-twitter fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-facebook-f fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-instagram fw-normal"></i>
-                    </a>
-                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="#">
-                      <i className="fab fa-linkedin-in fw-normal"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="text-center py-4">
-                  <h4 className="text-primary">Full Name</h4>
-                  <p className="text-uppercase m-0">Designation</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+          </div> */}
       {/* Team Member End */}
     </>
   )
 }
 
-export default InsureTechComp
+export default EmployeeBenefitComp

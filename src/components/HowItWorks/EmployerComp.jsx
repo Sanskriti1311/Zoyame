@@ -8,47 +8,50 @@ const EmployerComp = () => {
             {/* Navbar Start */}
             <div className="container-fluid position-relative p-0">
                 <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-                        <a href={`${base_url}/`} className="navbar-brand p-2">
-                          <img src={`${base_url}/assets/img/logo29.png`} alt="Logo" style={{ height: "80px" }} />
-                        </a>
-                
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                          <span className="fa fa-bars"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarCollapse">
-                          <div className="navbar-nav ms-auto py-0">
-                            <a href={`${base_url}/`} className="nav-item nav-link">Home</a>
-                            {/* <a href="/about" className="nav-item nav-link text-black">About</a> */}
-                            <div className="nav-item dropdown">
-                                <a href={`${base_url}/about`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">About </a>
-                                <div className="dropdown-menu m-0">
-                                  <a href={`${base_url}/about`} className="dropdown-item text-black">About Us</a>
-                                  <a href={`${base_url}/leadership`} className="dropdown-item text-black">Our Leadership</a>
-                                </div>
-                              </div>
-                            <div className="nav-item dropdown">
-                              <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Services</a>
-                              <div className="dropdown-menu m-0">
-                                <a href={`${base_url}/technology`} className="dropdown-item text-black">Technology</a>
-                                <a href={`${base_url}/digital-marketing`} className="dropdown-item text-black">Digital Marketing</a>
-                                <a href={`${base_url}/consulting`} className="dropdown-item text-black">Consulting & Analytics</a>
-                                <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsureTech</a>
-                                <a href={`${base_url}/healthtech`} className="dropdown-item text-black">HealthTech</a>
-                                <a href={`${base_url}/flex-solution`} className="dropdown-item text-black">Flex Solution</a>
-                              </div>
-                            </div>
-                            <div className="nav-item dropdown">
-                              <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
-                              <div className="dropdown-menu m-0">
-                                <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
-                                <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
-                              </div>
-                            </div>
-                            {/* <a href="/contact" className="btn btn-primary py-2 px-4 ms-3">Get In Touch</a> */}
-                          </div>
-                            <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
+                    <a href={`${base_url}/`} className="navbar-brand p-2">
+                    <img src={`${base_url}/assets/img/logo29.png`} alt="Logo" style={{ height: "80px" }} />
+                    </a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span className="fa fa-bars"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarCollapse">
+                    <div className="navbar-nav ms-auto py-0">
+                        <a href={`${base_url}/`} className="nav-item nav-link">Home</a>
+                        <div className="nav-item dropdown">
+                        <a href={`${base_url}/about`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">About </a>
+                        <div className="dropdown-menu m-0">
+                            <a href={`${base_url}/about`} className="dropdown-item text-black">About Us</a>
+                            <a href={`${base_url}/leadership`} className="dropdown-item text-black">Our Leadership</a>
                         </div>
-                      </nav>
+                        </div>
+                        <div className="nav-item dropdown">
+                            <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
+                            <div className="dropdown-menu m-0">
+                                <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                                <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
+                                <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
+                                <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                            </div>
+                        </div>
+                        <div className="nav-item dropdown">
+                        <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
+                        <div className="dropdown-menu m-0">
+                            <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
+                            <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
+                            <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
+                        </div>
+                        </div>
+                        <div className="nav-item dropdown">
+                        <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
+                        <div className="dropdown-menu m-0">
+                            <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
+                            <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
+                        </div>
+                        </div>
+                    </div>
+                        <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
+                    </div>
+                </nav>
 
                 <div
                     className="container-fluid py-5"

@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="container">
           <div className="row gx-5">
             {/* Footer About */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-3 col-md-6">
               <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 p-2 mb-4">
                 <a href={`${base_url}/`} className="navbar-brand p-2" style={{ alignSelf: 'flex-start', marginLeft: '-5px' }}>
                   <img
@@ -36,47 +36,57 @@ const Footer = () => {
                   />
                 </a>
                 <p className="mt-3 mb-4 text-justify" style={{ textAlign: 'justify' }}>
-                  ZoyaMe is a leading provider of innovative technology solutions and
-                  digital marketing expertise to businesses across a range of industries.
+                  ZoyaMe delivers technology-driven platforms for insurance, health, and finance, empowering clients with efficiency, engagement, and growth
                 </p>
               </div>
 
             </div>
 
             {/* Footer Links */}
-            <div className="col-lg-8 col-md-6">
-              <div className="row gx-5">
+            <div className="col-lg-9 col-md-6">
+              <div className="row gx-4">
                 {/* Quick Links */}
-                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div className="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
                   <div className="section-title section-title-sm position-relative pb-3 mb-4">
                     <h3 className="mb-0">Quick Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start" >
                     <a className="mb-2" href={`${base_url}/`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Home</a>
                     <a className="mb-2" href={`${base_url}/about`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a className="mb-2" href={`${base_url}/technology`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a className="mb-2" href={`${base_url}/employeeBenefit-portal`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Products</a>
+                    <a className="mb-2" href={`${base_url}/technology`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Solutions</a>
                     <a className="mb-2" href={`${base_url}/employee`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>How it Works</a>
                     <a href={`${base_url}/contact`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                   </div>
                 </div>
 
-                {/* Popular Links */}
-                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                {/* Our Products */}
+                <div className="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
                   <div className="section-title section-title-sm position-relative pb-3 mb-4">
-                    <h3 className="mb-0">Our Services</h3>
+                    <h3 className="mb-0">Our Products</h3>
+                  </div>
+                  <div className="link-animated d-flex flex-column justify-content-start" >
+                    <a className="mb-2" href={`${base_url}/employeeBenefit-portal`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Employee Benefits Portal (Phillip)</a>
+                    <a className="mb-2" href={`${base_url}/broker-one`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>BrokerOne Solution</a>
+                    <a className="mb-2" href={`${base_url}/flex-benefit`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Flex Benefits System</a>
+                    <a className="mb-2" href={`${base_url}/quote-master`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>QuoteMaster360</a>
+                  </div>
+                </div>
+                {/* Our Solutions */}
+                <div className="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="mb-0">Our Solutions</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
-                    <a className="mb-2" href={`${base_url}/technology`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Technology</a>
-                    <a className="mb-2" href={`${base_url}/digital-marketing`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
-                    <a className="mb-2" href={`${base_url}/consulting`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Consulting & Analytics</a>
-                    <a className="mb-2" href={`${base_url}/insuretech`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>InsureTech</a>
-                    <a className="mb-2" href={`${base_url}/healthtech`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>HealtTech</a>
-                    <a href={`${base_url}/flex-solution`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Flex Solution</a>
+                    <a className="mb-2" href={`${base_url}/insuretech`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>InsurTech Solutions</a>
+                    <a className="mb-2" href={`${base_url}/employee-benefit`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Employee Benefits Platform (ZoyaCube)</a>
+                    <a className="mb-2" href={`${base_url}/retail-solution`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Retail Solutions</a>
                   </div>
                 </div>
 
+
                 {/* Contact Info */}
-                <div className="col-lg-4 col-md-12 pt-5 mb-5">
+                <div className="col-lg-3 col-md-12 pt-5 mb-5">
                   <div className="section-title section-title-sm position-relative pb-3 mb-4">
                     <h3 className="mb-0">Get In Touch</h3>
                   </div>

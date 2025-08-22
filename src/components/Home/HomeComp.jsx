@@ -49,30 +49,34 @@ const HomeComp = () => {
           <a href={`${base_url}/`} className="navbar-brand p-2">
             <img src={`${base_url}/assets/img/logo29.png`} alt="Logo" style={{ height: "80px" }} />
           </a>
-  
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="fa fa-bars"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
               <a href={`${base_url}/`} className="nav-item nav-link">Home</a>
-              {/* <a href="/about" className="nav-item nav-link text-black">About</a> */}
               <div className="nav-item dropdown">
-                  <a href={`${base_url}/about`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">About </a>
-                  <div className="dropdown-menu m-0">
-                    <a href={`${base_url}/about`} className="dropdown-item text-black">About Us</a>
-                    <a href={`${base_url}/leadership`} className="dropdown-item text-black">Our Leadership</a>
-                  </div>
-                </div>
-              <div className="nav-item dropdown">
-                <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Services</a>
+                <a href={`${base_url}/about`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">About </a>
                 <div className="dropdown-menu m-0">
-                  <a href={`${base_url}/technology`} className="dropdown-item text-black">Technology</a>
-                  <a href={`${base_url}/digital-marketing`} className="dropdown-item text-black">Digital Marketing</a>
-                  <a href={`${base_url}/consulting`} className="dropdown-item text-black">Consulting & Analytics</a>
-                  <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsureTech</a>
-                  <a href={`${base_url}/healthtech`} className="dropdown-item text-black">HealthTech</a>
-                  <a href={`${base_url}/flex-solution`} className="dropdown-item text-black">Flex Solution</a>
+                  <a href={`${base_url}/about`} className="dropdown-item text-black">About Us</a>
+                  <a href={`${base_url}/leadership`} className="dropdown-item text-black">Our Leadership</a>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
+                <div className="dropdown-menu m-0">
+                  <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                  <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
+                  <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
+                  <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
+                <div className="dropdown-menu m-0">
+                  <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
+                  <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
+                  <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
               </div>
               <div className="nav-item dropdown">
@@ -82,7 +86,6 @@ const HomeComp = () => {
                   <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
                 </div>
               </div>
-              {/* <a href="/contact" className="btn btn-primary py-2 px-4 ms-3">Get In Touch</a> */}
             </div>
               <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
           </div>
@@ -98,7 +101,7 @@ const HomeComp = () => {
                   <h2 className=" text-white text-uppercase mb-3 animated slideInDown">Empowering Insurance, Health & Financial Ecosystems with Digital Innovation</h2>
                   <p className="text-white mb-md-4 animated zoomIn" style={{fontSize:'18px'}}>ZoyaMe is a next-gen Tech Product Company delivering cutting-edge InsurTech, HealthTech & FinTech solutions for Insurance Companies, Brokers, Corporates, and Retail Customers.</p>
                   {/* <p className=" text-white mb-md-4 animated zoomIn">At ZoyaMe, we specialize in insurance data analytics and benefits analysis with benchmarking. Our advanced tools identify trends and patterns to optimize your benefits strategy. We compare your program to industry standards, ensuring competitive benefits for top talent.</p> */}
-                  <a href={`${base_url}/about`} className="btn  py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Explore Our Solutions</a>
+                  <a href={`${base_url}/about`} className="btn py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Explore Our Solutions</a>
                   <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Request a Demo</a>
                 </div>
               </div>
@@ -108,11 +111,11 @@ const HomeComp = () => {
               <img className="w-100 zoom-in-image" src={`${base_url}/assets/img/website_images/healthTech.jpeg`} alt="Image" />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: "900px", paddingTop:'50px' }}>
-                  <h2 className=" text-white text-uppercase mb-3 animated slideInDown">Transforming Benefits, Insurance & Wellness Through Smart Technology</h2>
+                  <h2 className="text-white text-uppercase mb-3 animated slideInDown">Transforming Benefits, Insurance & Wellness Through Smart Technology</h2>
                   <p className="text-white mb-md-4 animated zoomIn" style={{fontSize:'18px'}}>ZoyaMe revolutionizes InsurTech, HealthTech & FinTech with scalable digital platforms tailored for insurers, brokers, corporates, and individuals.</p>
                   {/* <p className="text-white mb-md-4 animated zoomIn">ZoyaMe provides innovative healthtech solutions to help healthcare businesses improve patient care, increase efficiency, and reduce costs. Our services include telemedicine, electronic medical records, and data analytics, among others. Trust our expert team to provide personalized solutions tailored to your unique needs.</p> */}
-                  <a href={`${base_url}/about`} className="btn  py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Read More</a>
-                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Contact Us</a>
+                  <a href={`${base_url}/about`} className="btn py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Explore Our Solutions</a>
+                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Request a Demo</a>
                 </div>
               </div>
             </div>
@@ -124,37 +127,13 @@ const HomeComp = () => {
                   <h2 className=" text-white text-uppercase mb-3 animated slideInDown">Future-Ready Tech for the Insurance & Health Ecosystem</h2>
                   <p className="text-white mb-md-4 animated zoomIn" style={{fontSize:'18px'}}>ZoyaMe empowers stakeholders with robust digital tools, automation, and real-time analytics to streamline insurance, wellness, and financial journeys.</p>
                   {/* <p className=" text-white mb-md-4 animated zoomIn">We stay at the forefront of the rapidly evolving insurtech landscape to offer innovative solutions that help businesses succeed in the insurance industry. Our expert team leverages the latest technologies, such as AI and machine learning, to streamline processes, improve customer experience, and reduce costs.</p> */}
-                  <a href={`${base_url}/about`} className="btn  py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Read More</a>
-                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Contact Us</a>
+                  <a href={`${base_url}/about`} className="btn py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Explore Our Solutions</a>
+                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Request a Demo</a>
                 </div>
               </div>
             </div>
-
-            {/* <div className="carousel-item">
-              <img className="w-100 zoom-in-image" src={`${base_url}/assets/img/website_images/digital-marketing.jpeg`} alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: "900px" }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">Digital Marketing</h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">Lead with Digital Impact.</h1>
-                  <a href={`${base_url}/about`} className="btn  py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Read More</a>
-                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Contact Us</a>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="carousel-item">
-              <img className="w-100 zoom-in-image" src={`${base_url}/assets/img/website_images/Technology.jpg`} alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: "900px" }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">Technology</h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">Your Tech Growth Partner</h1>
-                  <a href={`${base_url}/about`} className="btn  py-md-3 px-md-5 me-3 animated slideInLeft border-0 text-white hover-blue1" style={{backgroundColor:'#8dcf47'}}>Read More</a>
-                  <a href={`${base_url}/contact`} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight hover-blue">Contact Us</a>
-                </div>
-              </div>
-            </div> */}
           </div>
-
+          
           <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
@@ -192,7 +171,7 @@ const HomeComp = () => {
 
             {/* Flex Solution */}
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-              <a href={`${base_url}/flex-solution`} style={{ textDecoration: 'none' }}>
+              <a href={`${base_url}/employee-benefit`} style={{ textDecoration: 'none' }}>
                 <div
                   className="shadow d-flex flex-column align-items-center justify-content-center p-4"
                   style={{ height: "150px", backgroundColor: '#f8f9fa' }}
@@ -201,16 +180,16 @@ const HomeComp = () => {
                     className="d-flex align-items-center justify-content-center rounded mb-3"
                     style={{ width: "60px", height: "60px", backgroundColor: '#65518c' }}
                   >
-                    <i className="fa fa-gift text-white display-6"></i>
+                    <i className="fa fa-users text-white display-6"></i>
                   </div>
-                  <h3 className="mb-0" style={{ color: '#65518c' }}>Flex Solution</h3>
+                  <h3 className="mb-0" style={{ color: '#65518c' }}>Employee Benefits</h3>
                 </div>
               </a>
             </div>
 
             {/* Digital Marketing */}
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-              <a href={`${base_url}/digital-marketing`} style={{ textDecoration: 'none' }}>
+              <a href={`${base_url}/retail-solution`} style={{ textDecoration: 'none' }}>
                 <div
                   className="shadow d-flex flex-column align-items-center justify-content-center p-4"
                   style={{ height: "150px", backgroundColor: '#537ed2 ' }}
@@ -219,9 +198,9 @@ const HomeComp = () => {
                     className="bg-white d-flex align-items-center justify-content-center rounded mb-3"
                     style={{ width: "60px", height: "60px" }}
                   >
-                    <i className="fa fa-bullhorn display-6" style={{ color: '#537ed2 ' }}></i>
+                    <i className="fa fa-shopping-cart display-6" style={{ color: '#537ed2 ' }}></i>
                   </div>
-                  <h3 className="text-white mb-0">Digital Marketing</h3>
+                  <h3 className="text-white mb-0">Retail Solutions</h3>
                 </div>
               </a>
             </div>
@@ -317,7 +296,7 @@ const HomeComp = () => {
           <div className="section-title text-center position-relative pb-3 mb-5 mx-auto">
             <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Why ZoyaMe?</h3>
             <h3 className="mb-0">
-              Built to empower the InsurTech, HealthTech, and FinTech ecosystems with innovation and impact.
+              Elevating Insurance, Health & Finance with experience-first, future-ready digital products.
             </h3>
           </div>
 
@@ -325,9 +304,9 @@ const HomeComp = () => {
             {/* Left Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-bullhorn", title: "Digital Services", desc: "Offering digital services on all media channels", bgClass: "bg-color-1" },
-                { icon: "fa-user-md", title: "Consulting", desc: "Advisory implementation services tailored to you", bgClass: "bg-color-2" },
-                { icon: "fa-tachometer-alt", title: "Easy Onboarding", desc: "Three easy steps to onboard a new employee", bgClass: "bg-color-3" }
+                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech & FinTech ecosystems", bgClass: "bg-color-1" },
+                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgClass: "bg-color-2" },
+                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgClass: "bg-color-3" }
               ].map((item, index) => (
                 <div
                   key={index}
@@ -349,7 +328,7 @@ const HomeComp = () => {
             <div className="col-lg-4 text-center wow zoomIn" data-wow-delay="0.3s">
               <img
                 className="img-fluid rounded"
-                src={`${base_url}/assets/img/why_choose.png`}
+                src={`${base_url}/assets/img/Images/WCU 390 527px.jpg`}
                 alt="Feature"
                 style={{ maxHeight: "400px", objectFit: "contain" }}
               />
@@ -358,9 +337,9 @@ const HomeComp = () => {
             {/* Right Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-umbrella", title: "Top Insurance & TPA", desc: "Integrated with top insurance companies", bgClass: "bg-color-4" },
-                { icon: "fa-chart-bar", title: "Interactive Dashboard", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
-                { icon: "fa-flask", title: "Lab & Diagnosis", desc: "Integrated with best in class wellness providers", bgClass: "bg-color-6" }
+                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgClass: "bg-color-4" },
+                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
+                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgClass: "bg-color-6" }
               ].map((item, index) => (
                 <div
                   key={index}
@@ -382,6 +361,62 @@ const HomeComp = () => {
       </div>
       {/* Why Choose Us Section End */}
 
+      {/* Our Products Section Start */}
+      <div className="container-fluid py-5" style={{ backgroundColor:"#f8f9fa" }}>
+        <div className="container py-5">
+          <div className="section-title text-center position-relative pb-3 mb-5 mx-auto">
+            <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Our Products</h3>
+            <h3 className="mb-0">
+              Elevating Insurance, Health & Finance with experience-first, future-ready digital products.
+            </h3>
+          </div>
+
+          <div className="row g-4">
+            {/* Product 1 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="product-card">
+                <div 
+                  className="product-bg" 
+                  // style={{ backgroundImage: "url('assets/img/products/benefits.jpg')" }}
+                  style={{
+                    backgroundImage: `url('${base_url}/assets/img/Services/InsureTech/InsureTech.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+                <div className="product-overlay">
+                  <h5 className="fw-bold">EMPLOYEE BENEFITS PORTAL</h5>
+                  <p className="product-desc">
+                    Secure your future with comprehensive health coverage and hassle-free claims.
+                  </p>
+                  <a href="#" className="btn btn-outline-light btn-sm mt-2">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Product 2 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="product-card">
+                <div 
+                  className="product-bg" 
+                  style={{ backgroundImage: "url('assets/img/products/broker.jpg')" }}
+                ></div>
+                <div className="product-overlay">
+                  <h5 className="fw-bold">BrokerOne Solution</h5>
+                  <p className="product-desc">
+                    BrokerOne Solution is a next-generation Employee Benefits & Lead Management Platform built for the dynamic UAE insurance market. 
+                  </p>
+                  <a href="#" className="btn btn-outline-light btn-sm mt-2">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Repeat for other products... */}
+          </div>
+        </div>
+      </div>
+      {/* Our Products Section End */}
+
       {/* Our Services Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
@@ -390,7 +425,7 @@ const HomeComp = () => {
             style={{ maxWidth: "1000px" }}
           >
             <h5 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>
-              Technology Services
+              Our Solution
             </h5>
             <h3 className="mb-0">
               The technology platform for Flex Benefits Solutions may include the following components.
@@ -403,14 +438,18 @@ const HomeComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s" >
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/software_service_01.png`} alt="Ecommerce" />
-                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Software Development
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/InsureTech/InsureTech.jpg`} alt="InsurTech Solutions Solutionsrce" />
+                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/insuretech`} style={{backgroundColor:"#ff9800"}}>
+                        InsurTech Solutions
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Empowering Businesses Through Custom Software</h4>
-                      <p>We build scalable, robust, and user-friendly software solutions tailored to your business needs. From web applications to enterprise systems, our development approach ensures streamlined operations, enhanced productivity, and long-term value.</p>
+                      <h4 className="mb-3">Transforming Insurance with Digital Innovation</h4>
+                      <p> Our InsurTech solutions empower insurers, brokers, and partners to simplify 
+                        processes, enhance customer experiences, and drive growth. From digital policy 
+                        issuance to claims automation and data-driven insights, we help modernize the 
+                        insurance ecosystem with technology that delivers efficiency and trust.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -419,14 +458,16 @@ const HomeComp = () => {
                 <div className="col-md-4 wow slideInUp" data-wow-delay="0.6s">
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/customized_services_02.png`} alt="Enterprise portal"/>
-                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Customized Software
+                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Employee_benefit/employeebenefit.jpg`} alt="Enterprise portal"/>
+                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/employee-benefit`} style={{backgroundColor:"#ff9800"}}>
+                        Employee Benefits Platform (ZoyaCube)
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Tailored Software Solutions for Unique Business Needs</h4>
-                      <p>At ZoyaMe, we specialize in building customized software applications that align perfectly with your business processes. Whether it's automating workflows, managing resources, or integrating systems, our bespoke solutions are designed to boost efficiency, scalability, and performance across departments.</p>
+                      <h4 className="mb-3">ZoyaCube: Engage, Retain & Empower Employees</h4>
+                      <p>
+                        ZoyaCube is a smart Employee Benefits Platform that simplifies benefits administration and delivers personalized, flexible, and engaging programs. It boosts employee satisfaction, retention, and overall organizational growth with seamless digital access and data-driven insights.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -436,63 +477,18 @@ const HomeComp = () => {
                   <div className="blog-item bg-light rounded overflow-hidden">
                     <div className="blog-img position-relative overflow-hidden">
                       <img className="img-fluid" src={`${base_url}/assets/img/website_images/mobile_service_03.png`} alt="Server Management" />
-                      <a className="position-absolute top-0 start-0  text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Mobile Application
+                      <a className="position-absolute top-0 start-0  text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/retail-solution`} style={{backgroundColor:"#ff9800"}}>
+                        Retail Solutions
                       </a>
                     </div>
                     <div className="p-4">
-                      <h4 className="mb-3">Driving Growth with Custom Mobile Applications</h4>
-                      <p>At ZoyaMe, we craft high-performance mobile applications tailored to your business needs. From intuitive UI/UX design to robust backend integration, our apps ensure seamless functionality, user engagement, and scalability across both Android and iOS platforms.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <h4 className="mb-3">Transforming Retail with Smart Digital Solutions</h4>
+                      <p>
+                        Our Retail Solutions deliver seamless shopping experiences across online and in-store channels, 
+                        streamlining operations with unified systems while boosting sales through personalization, 
+                        automation, real-time analytics, and data-driven insights for sustainable business growth.
+                      </p>
 
-              <div className="row g-5 mt-4">
-                {/* Service 4 */}
-                <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
-                  <div className="blog-item bg-light rounded overflow-hidden">
-                    <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/website_images/web_application_service_04.png`} alt="Software Support" />
-                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Web Application
-                      </a>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="mb-3">Reliable Web Development Tailored for Business Growth</h4>
-                      <p>At ZoyaMe, we develop dynamic and responsive web applications tailored to meet your business objectives. Our solutions are built for performance, security, and scalability—ensuring seamless user experience, efficient workflows, and powerful integrations across browsers and devices.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Service 5 */}
-                <div className="col-md-4 wow slideInUp" data-wow-delay="0.6s">
-                  <div className="blog-item bg-light rounded overflow-hidden">
-                    <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/softwareSupport-04.jpg`} alt="Re engineering" />
-                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Software Support
-                      </a>
-                    </div>
-                     <div className="p-4">
-                      <h4 className="mb-3">Seamless Software Assistance for Business Continuity</h4>
-                      <p>At ZoyaMe, our software support services ensure that your applications remain efficient, secure, and up-to-date. From troubleshooting and bug fixes to regular updates and user training, we provide end-to-end support to maximize system uptime and user satisfaction across all platforms.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Service 6 */}
-                <div className="col-md-4 wow slideInUp" data-wow-delay="0.1s">
-                  <div className="blog-item bg-light rounded overflow-hidden">
-                    <div className="blog-img position-relative overflow-hidden">
-                      <img className="img-fluid" src={`${base_url}/assets/img/Services/Technology/cyberSecurity-06.jpg`} alt="Cyber Security" />
-                      <a className="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href={`${base_url}/technology`} style={{backgroundColor:"#ff9800"}}>
-                        Cyber Security
-                      </a>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="mb-3">Securing Digital Assets with Advanced Cyber Security</h4>
-                      <p>Cyber security refers to every aspect of protecting an organization and its employees and assets against cyber threats. As cyber attacks become more common and sophisticated and corporate networks grow more complex, a variety of cyber security solutions are required to mitigate corporate cyber risk.</p>
                     </div>
                   </div>
                 </div>
@@ -503,49 +499,75 @@ const HomeComp = () => {
       </div>
       {/* Our Services End */}
 
-      {/* InsureTech & Flex Solution Start */}
-      <div className="container-fluid py-5 fade-in-section bg-light mt-4" style={{ backgroundImage: `url('${base_url}/assets/img/website_images/9b3e44eb-a187-407f-9a3f-48835cfb7d71.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center',}}>
+      {/* Who We Serve Start */}
+      <div
+        className="container-fluid py-5 text-white animate-section"
+        style={{
+          backgroundImage: `url('${base_url}/assets/img/Images/who-we-serve.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="container py-5">
           <div className="row align-items-center">
-            <div className="col-lg-6 fade-in-left">
-              <div className="border-start border-4 border-primary ps-4 mb-4">
-                <h2 className="fw-bold mb-3" style={{ color: "#3A2351" }}>
-                  Insurtech
-                </h2>
-                <p className="mb-4 p" style={{ textAlign: "justify" }}>
-                  Insurance is a financial product that offers protection against unforeseen events. It provides compensation for losses in exchange for regular payments of premiums. Insurance can cover various aspects of life, including health, property, liability, and more.
-                </p>
-                <a className="btn px-4 py-2 mt-2 text-white" href={`${base_url}/insuretech`} style={{ backgroundColor: '#537ed2' }}>
-                  Read More
-                </a>
-              </div>
+            <div className="col-lg-5 mb-4 fade-in-left">
+              <h3 className="text-uppercase small mb-2 text-white">Who We Serve</h3>
+              <h2 className="fw-bold mb-4 text-white">Comprehensive Insurance Solutions for Every Need</h2>
+              <p className="mb-0 text-white">
+                From insurers and brokers to corporates and individuals, we provide 
+                tailored digital platforms that simplify processes, enhance engagement, 
+                and deliver measurable value across the insurance ecosystem.
+              </p>
             </div>
-            <div className="col-lg-6 text-center fade-in-right">
-              <img src={`${base_url}/assets/img/insurance.png`} alt="Insurtech" className="img-fluid" style={{ maxHeight: "400px" }} />
-            </div>
-          </div>
 
-          <div className="row align-items-center mt-5">
-            <div className="col-lg-6 text-center fade-in-left">
-              <img src={`${base_url}/assets/img/flex.png`} alt="Flex" className="img-fluid" style={{ maxHeight: "400px" }} />
-            </div>
-            <div className="col-lg-6 fade-in-right">
-              <div className="border-start border-4 border-primary ps-4 mb-4">
-                <h2 className="fw-bold mb-3" style={{ color: "#3A2351" }}>
-                  Flex Solution
-                </h2>
-                <p className="mb-4 p" style={{ textAlign: "justify" }}>
-                  Flex is non-wage compensation provided by a company to its employees. These benefits can include health insurance, retirement plans, paid time off, and other perks. Flex can be an important factor in attracting and retaining top talent, as well as promoting employee well-being and satisfaction.
-                </p>
-                <a className="btn px-4 py-2 mt-2 text-white" href={`${base_url}/flex-solution`} style={{ backgroundColor: '#537ed2' }}>
-                  Explore More
-                </a>
+            {/* Right Section (Cards) */}
+            <div className="col-lg-7 fade-in-up">
+              <div className="row g-4">
+                <div className="col-md-6 fade-in-card">
+                  <div className="bg-white text-dark p-4 h-100 text-center card-animate">
+                    <div className="d-inline-flex justify-content-center align-items-center bg-primary text-white rounded-circle mb-3" style={{ width: "60px", height: "60px" }}>
+                      <i className="bi bi-flower1 fs-3"></i>
+                    </div>
+                    <h5>Insurance Companies:</h5>
+                    <p className="small">Modernize distribution, boost digital engagement & compliance.</p>
+                  </div>
+                </div>
+
+                <div className="col-md-6 fade-in-card">
+                  <div className="bg-white text-dark p-4 h-100 text-center card-animate">
+                    <div className="d-inline-flex justify-content-center align-items-center bg-danger text-white rounded-circle mb-3" style={{ width: "60px", height: "60px" }}>
+                      <i className="bi bi-briefcase-fill fs-3"></i>
+                    </div>
+                    <h5>Insurance Brokers:</h5>
+                    <p className="small">One-stop digital stack to manage leads, quotes, issuance, renewals, and MIS.</p>
+                  </div>
+                </div>
+
+                <div className="col-md-6 fade-in-card">
+                  <div className="bg-white text-dark p-4 h-100 text-center card-animate">
+                    <div className="d-inline-flex justify-content-center align-items-center bg-success text-white rounded-circle mb-3" style={{ width: "60px", height: "60px" }}>
+                      <i className="bi bi-basket2 fs-3"></i>
+                    </div>
+                    <h5>Corporates (SMEs & Large Enterprises):</h5>
+                    <p className="small">Fully customizable employee benefits and group insurance platforms.</p>
+                  </div>
+                </div>
+
+                <div className="col-md-6 fade-in-card">
+                  <div className="bg-white text-dark p-4 h-100 text-center card-animate">
+                    <div className="d-inline-flex justify-content-center align-items-center bg-info text-white rounded-circle mb-3" style={{ width: "60px", height: "60px" }}>
+                      <i className="bi bi-stack fs-3"></i>
+                    </div>
+                    <h5>Retail Clients:</h5>
+                    <p className="small">Easy-to-use portals for individual policy selection, purchase, and management.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* InsureTech & Flex Solution End */}
+      {/* Who We Serve End */}
 
       {/* Integrated healthcare Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -560,7 +582,6 @@ const HomeComp = () => {
             <p className="mb-0">
               Comprehensive healthcare programs with insurance benefits provide a range of services to address overall well-being, including preventive care, treatment, and wellness support.
             </p>
-            
           </div>
 
           <div className="row g-4">

@@ -12,47 +12,50 @@ const AboutUsComp = () => {
       {/* Navbar Start */}
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href={`${base_url}/`} className="navbar-brand p-2">
-          <img src={`${base_url}/assets/img/logo29.png`} alt="Logo" style={{ height: "80px" }} />
-        </a>
-
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span className="fa fa-bars"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto py-0">
-            <a href={`${base_url}/`} className="nav-item nav-link">Home</a>
-            {/* <a href="/about" className="nav-item nav-link text-black">About</a> */}
-            <div className="nav-item dropdown">
+          <a href={`${base_url}/`} className="navbar-brand p-2">
+            <img src={`${base_url}/assets/img/logo29.png`} alt="Logo" style={{ height: "80px" }} />
+          </a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span className="fa fa-bars"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-nav ms-auto py-0">
+              <a href={`${base_url}/`} className="nav-item nav-link">Home</a>
+              <div className="nav-item dropdown">
                 <a href={`${base_url}/about`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">About </a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/about`} className="dropdown-item text-black">About Us</a>
                   <a href={`${base_url}/leadership`} className="dropdown-item text-black">Our Leadership</a>
                 </div>
               </div>
-            <div className="nav-item dropdown">
-              <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Services</a>
-              <div className="dropdown-menu m-0">
-                <a href={`${base_url}/technology`} className="dropdown-item text-black">Technology</a>
-                <a href={`${base_url}/digital-marketing`} className="dropdown-item text-black">Digital Marketing</a>
-                <a href={`${base_url}/consulting`} className="dropdown-item text-black">Consulting & Analytics</a>
-                <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsureTech</a>
-                <a href={`${base_url}/healthtech`} className="dropdown-item text-black">HealthTech</a>
-                <a href={`${base_url}/flex-solution`} className="dropdown-item text-black">Flex Solution</a>
+              <div className="nav-item dropdown">
+                <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
+                <div className="dropdown-menu m-0">
+                  <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                  <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
+                  <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
+                  <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
+                <div className="dropdown-menu m-0">
+                  <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
+                  <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
+                  <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
+                <div className="dropdown-menu m-0">
+                  <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
+                  <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
+                </div>
               </div>
             </div>
-            <div className="nav-item dropdown">
-              <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
-              <div className="dropdown-menu m-0">
-                <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
-                <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
-              </div>
-            </div>
-            {/* <a href="/contact" className="btn btn-primary py-2 px-4 ms-3">Get In Touch</a> */}
+              <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
           </div>
-            <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
-        </div>
-      </nav>
+        </nav>
 
         <div
           className="container-fluid py-5"
@@ -119,11 +122,48 @@ const AboutUsComp = () => {
                 />
               </div>
             </div>
-            <p className="mb-0" style={{ textAlign: "justify" }}>
-              As a leading provider of InsurTech and HealthTech solutions, we are committed to helping insurance companies and healthcare providers leverage technology to improve the quality of care and services they provide to their customers. Our Flex Benefits Solution and Affinity Solution platforms are just two examples of the innovative solutions we offer to help businesses in these industries succeed.
-              At ZoyaMe, we are also proud to offer Employee Benefits Consulting services to help businesses design and implement effective Employee Benefits Programs. Our team of benefits experts works closely with clients to understand their unique needs and develop customized benefits programs that help attract and retain top talent.
-              We also have a strong focus on analytics and data-driven decision-making when it comes to our Employee Benefits Practice. Our team of benefits consultants and data analysts work together to help businesses understand the impact of their benefits programs on employee satisfaction, retention, and overall business performance.
-            </p>
+            <h4 className="fw-bold mb-3">
+              Some key benefits include: <br />
+              <small className="fw-normal text-muted">
+                Driving innovation, efficiency, and employee engagement through tailored 
+                technology, consulting, and analytics solutions.
+              </small>
+            </h4>
+            <ul className="list-unstyled mb-0 mt-0">
+              <li className="d-flex align-items-start mb-3">
+                <i className="bi bi-cpu-fill text-primary me-2" style={{ fontSize: "2rem" }}></i>
+                <span className="pt-1">
+                  Helping insurers & healthcare providers leverage technology with 
+                  <strong> Flex Benefits</strong> and <strong> Affinity Solutions</strong>, 
+                  empowering organizations to deliver personalized healthcare, streamline 
+                  operations, and improve overall customer engagement through innovative 
+                  digital platforms.
+                </span>
+
+              </li>
+              
+              <li className="d-flex align-items-start mb-3">
+                <i className="bi bi-people-fill text-success me-2" style={{ fontSize: "2rem" }}></i>
+                <span className="pt-1">
+                  <strong>Employee Benefits Consulting</strong> to design effective programs 
+                  that attract & retain top talent, enhance employee well-being, and ensure 
+                  compliance with evolving regulations, while aligning benefits strategies 
+                  with overall business objectives.
+                </span>
+
+              </li>
+              
+              <li className="d-flex align-items-start mb-3">
+                <i className="bi bi-bar-chart-line-fill text-warning me-2" style={{ fontSize: "2rem" }}></i>
+                <span className="pt-1">
+                  <strong>Analytics-driven approach</strong> to measure impact on employee 
+                  satisfaction, retention, and business performance, providing actionable 
+                  insights through data visualization, predictive modeling, and benchmarking 
+                  to help organizations make informed, future-ready decisions.
+                </span>
+
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -183,9 +223,9 @@ const AboutUsComp = () => {
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="section-title text-center position-relative pb-3 mb-5 mx-auto">
-            <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Why Choose Us</h3>
+            <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Why ZoyaMe?</h3>
             <h3 className="mb-0">
-              A web-based interface that allows employers and employees to access the platform and interact with the different functionalities and features of the system.
+              Elevating Insurance, Health & Finance with experience-first, future-ready digital products.
             </h3>
           </div>
 
@@ -193,9 +233,9 @@ const AboutUsComp = () => {
             {/* Left Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-bullhorn", title: "Digital Services", desc: "Offering digital services on all media channels", bgClass: "bg-color-1" },
-                { icon: "fa-user-md", title: "Consulting", desc: "Advisory implementation services tailored to you", bgClass: "bg-color-2" },
-                { icon: "fa-tachometer-alt", title: "Easy Onboarding", desc: "Three easy steps to onboard a new employee", bgClass: "bg-color-3" }
+                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech, FinTech ecosystems", bgClass: "bg-color-1" },
+                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgClass: "bg-color-2" },
+                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgClass: "bg-color-3" }
               ].map((item, index) => (
                 <div
                   key={index}
@@ -217,7 +257,7 @@ const AboutUsComp = () => {
             <div className="col-lg-4 text-center wow zoomIn" data-wow-delay="0.3s">
               <img
                 className="img-fluid rounded"
-                src={`${base_url}/assets/img/why_choose.png`}
+                src={`${base_url}/assets/img/Images/WCU 390 527px.jpg`}
                 alt="Feature"
                 style={{ maxHeight: "400px", objectFit: "contain" }}
               />
@@ -226,9 +266,9 @@ const AboutUsComp = () => {
             {/* Right Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-umbrella", title: "Top Insurance & TPA", desc: "Integrated with top insurance companies", bgClass: "bg-color-4" },
-                { icon: "fa-chart-bar", title: "Interactive Dashboard", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
-                { icon: "fa-flask", title: "Lab & Diagnosis", desc: "Integrated with best in class wellness providers", bgClass: "bg-color-6" }
+                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgClass: "bg-color-4" },
+                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
+                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgClass: "bg-color-6" }
               ].map((item, index) => (
                 <div
                   key={index}

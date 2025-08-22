@@ -41,6 +41,29 @@ const HomeComp = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    const cards = document.querySelectorAll(".product-card");
+    const section = document.querySelector("#products-section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.add("animate");
+            }, index * 300); // each card appears 300ms after the previous
+          });
+          observer.disconnect(); // animate only once
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(section);
+  }, []);
+
+
   return (
     <>
       {/* Navbar & Carousel Start */}
@@ -362,7 +385,7 @@ const HomeComp = () => {
       {/* Why Choose Us Section End */}
 
       {/* Our Products Section Start */}
-      <div className="container-fluid py-5" style={{ backgroundColor:"#f8f9fa" }}>
+      <div id="products-section" className="container-fluid py-5" style={{ backgroundColor:"#f8f9fa" }}>
         <div className="container py-5">
           <div className="section-title text-center position-relative pb-3 mb-5 mx-auto">
             <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Our Products</h3>
@@ -377,19 +400,20 @@ const HomeComp = () => {
               <div className="product-card">
                 <div 
                   className="product-bg" 
-                  // style={{ backgroundImage: "url('assets/img/products/benefits.jpg')" }}
                   style={{
-                    backgroundImage: `url('${base_url}/assets/img/Services/InsureTech/InsureTech.jpg')`,
+                    backgroundImage: `url('${base_url}/assets/img/Products/employee_benefit-portal.jpg')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 ></div>
                 <div className="product-overlay">
-                  <h5 className="fw-bold">EMPLOYEE BENEFITS PORTAL</h5>
+                  <h4 className="fw-bold text-white text-uppercase">EMPLOYEE BENEFITS PORTAL</h4>
+                  <h6 className="fw-bold text-white">Phillip Middle East Insurance Brokers</h6>
                   <p className="product-desc">
                     Secure your future with comprehensive health coverage and hassle-free claims.
                   </p>
-                  <a href="#" className="btn btn-outline-light btn-sm mt-2">Learn More</a>
+                  <a href={`${base_url}/employeeBenefit-portal`} className="btn btn-primary py-2 px-4 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -399,19 +423,66 @@ const HomeComp = () => {
               <div className="product-card">
                 <div 
                   className="product-bg" 
-                  style={{ backgroundImage: "url('assets/img/products/broker.jpg')" }}
+                  style={{
+                    backgroundImage: `url('${base_url}/assets/img/Products/brokerone.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
                 ></div>
                 <div className="product-overlay">
-                  <h5 className="fw-bold">BrokerOne Solution</h5>
+                  <h4 className="fw-bold text-white text-uppercase">BrokerOne Solution</h4>
+                  <h6 className="fw-bold text-white">Employee Benefits & Lead Management Platform</h6>
                   <p className="product-desc">
                     BrokerOne Solution is a next-generation Employee Benefits & Lead Management Platform built for the dynamic UAE insurance market. 
                   </p>
-                  <a href="#" className="btn btn-outline-light btn-sm mt-2">Learn More</a>
+                  <a href={`${base_url}/broker-one`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
                 </div>
               </div>
             </div>
 
-            {/* Repeat for other products... */}
+            {/* Product 3 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="product-card">
+                <div 
+                  className="product-bg" 
+                  style={{
+                    backgroundImage: `url('${base_url}/assets/img/Products/flex-benefit.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+                <div className="product-overlay">
+                  <h4 className="fw-bold text-white text-uppercase">Flex Benefits System</h4>
+                  <h6 className="fw-bold text-white">Modern Digital Flex Benefits platform</h6>
+                  <p className="product-desc">
+                    FlexiSure is a modern digital Flex Benefits platform designed for corporates in the UAE to offer employees the freedom to choose the benefits that matter most to them. 
+                  </p>
+                  <a href={`${base_url}/flex-benefit`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
+                </div>
+              </div>
+            </div>
+
+            {/* Product 4 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="product-card">
+                <div 
+                  className="product-bg" 
+                  style={{
+                    backgroundImage: `url('${base_url}/assets/img/Products/quotamaster.avif')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+                <div className="product-overlay">
+                  <h4 className="fw-bold text-white text-uppercase">QuoteMaster360</h4>
+                  <h6 className="fw-bold text-white">Smart Insurance Quotation Platform</h6>
+                  <p className="product-desc">
+                    QuoteMaster360 is a smart insurance quotation platform designed for the UAE’s SME corporate segment. 
+                  </p>
+                  <a href={`${base_url}/quote-master`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
+                </div>
+              </div>
+            </div> 
           </div>
         </div>
       </div>

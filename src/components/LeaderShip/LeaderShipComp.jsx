@@ -27,27 +27,28 @@ const LeaderShipComp = () => {
               <div className="nav-item dropdown">
                 <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
                 <div className="dropdown-menu m-0">
-                  <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                  {/* <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a> */}
                   <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
                   <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
                   <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                  <a href={`${base_url}/retailSolution-product`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
               </div>
-              <div className="nav-item dropdown">
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
                   <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
                   <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
-              </div>
-              <div className="nav-item dropdown">
+              </div> */}
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
                   <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
                 </div>
-              </div>
+              </div> */}
             </div>
               <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
           </div>

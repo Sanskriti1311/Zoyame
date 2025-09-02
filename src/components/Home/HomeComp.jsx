@@ -41,28 +41,24 @@ const HomeComp = () => {
     };
   }, []);
 
-
   useEffect(() => {
     const cards = document.querySelectorAll(".product-card");
     const section = document.querySelector("#products-section");
-
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
           cards.forEach((card, index) => {
             setTimeout(() => {
               card.classList.add("animate");
-            }, index * 300); // each card appears 300ms after the previous
+            }, index * 300); 
           });
-          observer.disconnect(); // animate only once
+          observer.disconnect(); 
         }
       },
       { threshold: 0.3 }
     );
-
     observer.observe(section);
   }, []);
-
 
   return (
     <>
@@ -88,27 +84,28 @@ const HomeComp = () => {
               <div className="nav-item dropdown">
                 <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
                 <div className="dropdown-menu m-0">
-                  <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                  {/* <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a> */}
                   <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
                   <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
                   <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                  <a href={`${base_url}/retailSolution-product`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
               </div>
-              <div className="nav-item dropdown">
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
                   <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
                   <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
-              </div>
-              <div className="nav-item dropdown">
+              </div> */}
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
                   <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
                 </div>
-              </div>
+              </div> */}
             </div>
               <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
           </div>
@@ -176,7 +173,7 @@ const HomeComp = () => {
           <div className="row gx-0">
             {/* Insurtech */}
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-              <a href={`${base_url}/insuretech`} style={{ textDecoration: 'none' }}>
+              <a href={`${base_url}/broker-one`} style={{ textDecoration: 'none' }}>
                 <div
                   className="shadow d-flex flex-column align-items-center justify-content-center p-4"
                   style={{ height: "150px", backgroundColor: '#ff9800' }}
@@ -187,14 +184,14 @@ const HomeComp = () => {
                   >
                     <i className="fa fa-umbrella display-6" style={{ color: '#ff9800' }}></i>
                   </div>
-                  <h3 className="text-white mb-0">Insurtech</h3>
+                  <h3 className="text-white mb-0">BrokerOne Solution</h3>
                 </div>
               </a>
             </div>
 
             {/* Flex Solution */}
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-              <a href={`${base_url}/employee-benefit`} style={{ textDecoration: 'none' }}>
+              <a href={`${base_url}/flex-benefit`} style={{ textDecoration: 'none' }}>
                 <div
                   className="shadow d-flex flex-column align-items-center justify-content-center p-4"
                   style={{ height: "150px", backgroundColor: '#f8f9fa' }}
@@ -205,14 +202,14 @@ const HomeComp = () => {
                   >
                     <i className="fa fa-users text-white display-6"></i>
                   </div>
-                  <h3 className="mb-0" style={{ color: '#65518c' }}>Employee Benefits</h3>
+                  <h3 className="mb-0" style={{ color: '#65518c' }}>Flex Benefit</h3>
                 </div>
               </a>
             </div>
 
             {/* Digital Marketing */}
             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-              <a href={`${base_url}/retail-solution`} style={{ textDecoration: 'none' }}>
+              <a href={`${base_url}/retailSolution-product`} style={{ textDecoration: 'none' }}>
                 <div
                   className="shadow d-flex flex-column align-items-center justify-content-center p-4"
                   style={{ height: "150px", backgroundColor: '#537ed2 ' }}
@@ -290,20 +287,21 @@ const HomeComp = () => {
               <div
                 className="rounded overflow-hidden position-relative"
                 style={{
-                  border: '6px solid #fff',
+                  // border: '6px solid #fff',
                   boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                   borderRadius: '16px',
                   zIndex: 2,
                 }}
               >
                 <img
-                  src={`${base_url}/assets/img/about-us.png`}
+                  src={`${base_url}/assets/img/website_images/about-us.jpg`}
                   alt="About Us"
                   className="img-fluid"
                   style={{
                     width: '100%',
                     height: 'auto',
                     objectFit: 'cover',
+                    height:'450px'
                   }}
                 />
               </div>
@@ -314,7 +312,7 @@ const HomeComp = () => {
       {/* About Us Section End */}
 
       {/* Why Choose Us Section Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s"> 
         <div className="container py-5">
           <div className="section-title text-center position-relative pb-3 mb-5 mx-auto">
             <h3 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>Why ZoyaMe?</h3>
@@ -327,16 +325,16 @@ const HomeComp = () => {
             {/* Left Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech & FinTech ecosystems", bgClass: "bg-color-1" },
-                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgClass: "bg-color-2" },
-                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgClass: "bg-color-3" }
+                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech, FinTech ecosystems", bgColor: "#6C63FF" },
+                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgColor: "#FF9800" },
+                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgColor: "#4CAF50" }
               ].map((item, index) => (
                 <div
                   key={index}
                   className="d-flex align-items-center wow fadeInLeft mb-4"
                   data-wow-delay={`${0.2 + index * 0.2}s`}
                 >
-                  <div className={`icon-circle me-3 ${item.bgClass}`}>
+                  <div className="icon-bg me-3" style={{ backgroundColor: item.bgColor }}>
                     <i className={`fa ${item.icon} text-white`}></i>
                   </div>
                   <div>
@@ -360,16 +358,16 @@ const HomeComp = () => {
             {/* Right Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgClass: "bg-color-4" },
-                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
-                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgClass: "bg-color-6" }
+                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgColor: "#9C27B0" },
+                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgColor: "#00BCD4" },
+                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgColor: "#FF5722" }
               ].map((item, index) => (
                 <div
                   key={index}
                   className="d-flex align-items-center wow fadeInLeft mb-4"
                   data-wow-delay={`${0.2 + index * 0.2}s`}
                 >
-                  <div className={`icon-circle me-3 ${item.bgClass}`}>
+                  <div className="icon-bg me-3" style={{ backgroundColor: item.bgColor }}>
                     <i className={`fa ${item.icon} text-white`}></i>
                   </div>
                   <div>
@@ -396,28 +394,7 @@ const HomeComp = () => {
 
           <div className="row g-4">
             {/* Product 1 */}
-            <div className="col-md-6 col-lg-3">
-              <div className="product-card">
-                <div 
-                  className="product-bg" 
-                  style={{
-                    backgroundImage: `url('${base_url}/assets/img/Products/employee_benefit-portal.jpg')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-                <div className="product-overlay">
-                  <h4 className="fw-bold text-white text-uppercase">EMPLOYEE BENEFITS PORTAL</h4>
-                  <h6 className="fw-bold text-white">Phillip Middle East Insurance Brokers</h6>
-                  <p className="product-desc">
-                    Secure your future with comprehensive health coverage and hassle-free claims.
-                  </p>
-                  <a href={`${base_url}/employeeBenefit-portal`} className="btn btn-primary py-2 px-4 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-
+          
             {/* Product 2 */}
             <div className="col-md-6 col-lg-3">
               <div className="product-card">
@@ -468,7 +445,7 @@ const HomeComp = () => {
                 <div 
                   className="product-bg" 
                   style={{
-                    backgroundImage: `url('${base_url}/assets/img/Products/quotamaster.avif')`,
+                    backgroundImage: `url('${base_url}/assets/img/Products/quotemaster.jfif')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -483,6 +460,28 @@ const HomeComp = () => {
                 </div>
               </div>
             </div> 
+
+            <div className="col-md-6 col-lg-3">
+              <div className="product-card">
+                <div 
+                  className="product-bg" 
+                  style={{
+                    backgroundImage: `url('${base_url}/assets/img/Products/Retail_Solution1.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+                <div className="product-overlay">
+                  <h4 className="fw-bold text-white text-uppercase">Retail Solution</h4>
+                  <h6 className="fw-bold text-white">Retail Innovation & Analytics Platform</h6>
+                  <p className="product-desc">
+                    Empower your business with smart retail management and seamless operations.                  
+                  </p>
+                  <a href={`${base_url}/retailSolution-product`} className="btn btn-primary py-2 px-4 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Learn More <i className="bi bi-arrow-right ms-2 text-white fw-bold"></i></a>
+                  
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -651,26 +650,28 @@ const HomeComp = () => {
               Integrated healthcare with insurance benefits
             </h3>
             <p className="mb-0">
-              Comprehensive healthcare programs with insurance benefits provide a range of services to address overall well-being, including preventive care, treatment, and wellness support.
+              Comprehensive healthcare programs with insurance benefits provide a
+              range of services to address overall well-being, including preventive
+              care, treatment, and wellness support.
             </p>
           </div>
 
           <div className="row g-4">
             {[
-              "cover1.jpg",
-              "cover2.jpg",
-              "cover3.jpg",
-              "cover4.jpg",
-              "cover5.jpg",
-              "cover6.jpg",
-              "cover7.jpg",
-              "cover8.jpg",
-            ].map((img, idx) => (
+              { img: "mental-wellness.jfif", label: "Mental Wellness" },
+              { img: "group-accident-insurance.jfif", label: "Group Accident Insurance" },
+              { img: "group-health-insurance.jfif", label: "Group Health Insurance" },
+              { img: "gym-memebrship.jfif", label: "Gym Membership" },
+              { img: "health-checkups.jpg", label: "Health Checkups" },
+              { img: "critical-illness-cover.jfif", label: "Critical Illness Cover" },
+              { img: "doctor-consultaion.jpg", label: "Doctor Consultation" },
+              { img: "group-term-life-insurance.jpg", label: "Group Term Life Insurance" },
+            ].map((item, idx) => (
               <div className="col-md-6 col-lg-3" key={idx}>
                 <div
                   className="health-card"
                   style={{
-                    backgroundImage: `url(${base_url}/assets/img/${img})`,
+                    backgroundImage: `url(${base_url}/assets/img/Integrated_Healthcare/${item.img})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     borderRadius: "15px",
@@ -678,29 +679,11 @@ const HomeComp = () => {
                     position: "relative",
                     overflow: "hidden",
                     boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
-                    transition: "transform 0.4s ease",
+                    cursor: "pointer",
                   }}
                 >
-                  <div
-                    className="health-card-overlay"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      background: "rgba(0,0,0,0.4)",
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      opacity: 0,
-                      transition: "opacity 0.3s ease-in-out",
-                      textAlign: "center",
-                      padding: "20px",
-                    }}
-                  >
-                    <p className="mb-0">Explore our wellness solutions</p>
+                  <div className="health-card-overlay">
+                    {item.label}
                   </div>
                 </div>
               </div>

@@ -31,27 +31,28 @@ const AboutUsComp = () => {
               <div className="nav-item dropdown">
                 <a href={`${base_url}/employeeBenefit-portal`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Products</a>
                 <div className="dropdown-menu m-0">
-                  <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a>
+                  {/* <a href={`${base_url}/employeeBenefit-portal`} className="dropdown-item text-black">Employee Benefits Portal(Phillip)</a> */}
                   <a href={`${base_url}/broker-one`} className="dropdown-item text-black">BrokerOne Solution </a>
                   <a href={`${base_url}/flex-benefit`} className="dropdown-item text-black">Flex Benefits System</a>
                   <a href={`${base_url}/quote-master`} className="dropdown-item text-black">QuoteMaster360</a>
+                  <a href={`${base_url}/retailSolution-product`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
               </div>
-              <div className="nav-item dropdown">
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/technology`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">Solutions</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/insuretech`} className="dropdown-item text-black">InsurTech Solutions</a>
                   <a href={`${base_url}/employee-benefit`} className="dropdown-item text-black">Employee Benefits Platform (ZoyaCube)</a>
                   <a href={`${base_url}/retail-solution`} className="dropdown-item text-black">Retail Solutions</a>
                 </div>
-              </div>
-              <div className="nav-item dropdown">
+              </div> */}
+              {/* <div className="nav-item dropdown">
                 <a href={`${base_url}/employee`} className="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown">How It Works</a>
                 <div className="dropdown-menu m-0">
                   <a href={`${base_url}/employee`} className="dropdown-item text-black">For Employee</a>
                   <a href={`${base_url}/employer`} className="dropdown-item text-black">For Employer</a>
                 </div>
-              </div>
+              </div> */}
             </div>
               <a href={`${base_url}/contact`} className="btn btn-primary py-2 px-4 ms-3 border-0 hover-blue" style={{backgroundColor:'#ff9800'}}>Get In Touch</a>
           </div>
@@ -85,7 +86,6 @@ const AboutUsComp = () => {
         <div className="container py-5">
           <div className="row g-5 align-items-center">
 
-            {/* Text Section */}
             <div className="col-lg-7">
               <div className="section-title position-relative pb-3 mb-4">
                 <h5 className="fw-bold text-uppercase" style={{ color: "#65518c" }}>
@@ -105,19 +105,18 @@ const AboutUsComp = () => {
               </p>
             </div>
 
-            {/* Image Section */}
             <div className="col-lg-5 mb-0">
               <div className="position-relative h-100">
                 <img
                   className="img-fluid wow zoomIn"
                   data-wow-delay="0.9s"
-                  src={`${base_url}/assets/img/about-us.png`}
+                  src={`${base_url}/assets/img/website_images/ZOYAME-Reliable Web Development Tailored for Business Growth-IM001.jpg`}
                   alt="About"
                   style={{
                     width: "100%",
-                    maxHeight: "500px",
-                    objectFit: "contain",
-                    borderRadius: "8px"
+                    height: "500px",   
+                    objectFit: "cover", 
+                    borderRadius: "12px"
                   }}
                 />
               </div>
@@ -175,9 +174,9 @@ const AboutUsComp = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="border-start border-4 border-primary ps-4 mb-4">
-                <h2 className="fw-bold mb-3" style={{ color: "#3A2351" }}>Mission</h2>
+                <h2 className="fw-bold mb-3" style={{ color: "#3A2351" }}>Mision</h2>
                 <p className="mb-4 p" style={{ textAlign: "justify" }}>
-                  At ZoyaMe, our mission is to empower businesses to succeed in the digital age by providing innovative technology solutions, cutting-edge digital marketing expertise, and customized employee benefits consulting services. We are committed to leveraging the latest technologies and analytics capabilities to help businesses streamline their operations, engage with their target audiences and attract and retain top talent. Our goal is to improve the lives of both our client's customers and employees by providing scalable, data-driven solutions that drive business growth and success.
+                  At ZoyaMe, our mision is to empower businesses to succeed in the digital age by providing innovative technology solutions, cutting-edge digital marketing expertise, and customized employee benefits consulting services. We are committed to leveraging the latest technologies and analytics capabilities to help businesses streamline their operations, engage with their target audiences and attract and retain top talent. Our goal is to improve the lives of both our client's customers and employees by providing scalable, data-driven solutions that drive business growth and success.
                 </p>
                 
               </div>
@@ -185,10 +184,10 @@ const AboutUsComp = () => {
 
             <div className="col-lg-6 text-center">
               <img
-                src={`${base_url}/assets/img/mission.png`}
-                alt="Insurtech"
+                src={`${base_url}/assets/img/mision.jpg`}
+                alt="Mision"
                 className="img-fluid"
-                style={{ maxHeight: "400px" }}
+                style={{ maxHeight: "300px" }}
               />
             </div>
           </div>
@@ -197,10 +196,10 @@ const AboutUsComp = () => {
         
         <div className="col-lg-6 text-center">
           <img 
-            src={`${base_url}/assets/img/vission.png`}
-            alt="Insurtech"
+            src={`${base_url}/assets/img/vision.jfif`}
+            alt="Vision"
             className="img-fluid"
-            style={{ maxHeight: "400px" }}
+            style={{ maxHeight: "300px" }}
           />
         </div>
 
@@ -233,16 +232,16 @@ const AboutUsComp = () => {
             {/* Left Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech, FinTech ecosystems", bgClass: "bg-color-1" },
-                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgClass: "bg-color-2" },
-                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgClass: "bg-color-3" }
+                { icon: "fa-network-wired", title: "Ecosystem-Ready", desc: "Built for InsurTech, HealthTech, FinTech ecosystems", bgColor: "#6C63FF" },
+                { icon: "fa-shield-alt", title: "Secure & Compliant", desc: "API-first, scalable architecture", bgColor: "#FF9800" },
+                { icon: "fa-cogs", title: "Seamless Integration", desc: "Real-time analytics & automation", bgColor: "#4CAF50" }
               ].map((item, index) => (
                 <div
                   key={index}
                   className="d-flex align-items-center wow fadeInLeft mb-4"
                   data-wow-delay={`${0.2 + index * 0.2}s`}
                 >
-                  <div className={`icon-circle me-3 ${item.bgClass}`}>
+                  <div className="icon-bg me-3" style={{ backgroundColor: item.bgColor }}>
                     <i className={`fa ${item.icon} text-white`}></i>
                   </div>
                   <div>
@@ -266,16 +265,16 @@ const AboutUsComp = () => {
             {/* Right Column */}
             <div className="col-lg-4 d-flex flex-column gap-4">
               {[
-                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgClass: "bg-color-4" },
-                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgClass: "bg-color-5" },
-                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgClass: "bg-color-6" }
+                { icon: "fa-chart-line", title: "Insightful Dashboards", desc: "Domain-backed compliance & security", bgColor: "#9C27B0" },
+                { icon: "fa-handshake", title: "Trusted Collaborations", desc: "Dashboard for employees, employers and admins", bgColor: "#00BCD4" },
+                { icon: "fa-lightbulb", title: "Innovation-First", desc: "Driving digital transformation with future-ready solutions", bgColor: "#FF5722" }
               ].map((item, index) => (
                 <div
                   key={index}
                   className="d-flex align-items-center wow fadeInLeft mb-4"
                   data-wow-delay={`${0.2 + index * 0.2}s`}
                 >
-                  <div className={`icon-circle me-3 ${item.bgClass}`}>
+                  <div className="icon-bg me-3" style={{ backgroundColor: item.bgColor }}>
                     <i className={`fa ${item.icon} text-white`}></i>
                   </div>
                   <div>

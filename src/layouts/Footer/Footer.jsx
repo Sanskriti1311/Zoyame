@@ -13,7 +13,7 @@ const Footer = () => {
       <div
           style={{
             height: "3px",
-            width: "100vw",
+            width: "100%",
             background: "linear-gradient(to right, #65518c, #737373, #8dcf47, #ff9800, #537ed2)",
             marginBottom: "0"
           }}
@@ -54,8 +54,8 @@ const Footer = () => {
                     <a className="mb-2" href={`${base_url}/`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Home</a>
                     <a className="mb-2" href={`${base_url}/about`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                     <a className="mb-2" href={`${base_url}/employeeBenefit-portal`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Products</a>
-                    <a className="mb-2" href={`${base_url}/technology`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Solutions</a>
-                    <a className="mb-2" href={`${base_url}/employee`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>How it Works</a>
+                    {/* <a className="mb-2" href={`${base_url}/technology`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Our Solutions</a> */}
+                    {/* <a className="mb-2" href={`${base_url}/employee`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>How it Works</a> */}
                     <a href={`${base_url}/contact`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                   </div>
                 </div>
@@ -66,14 +66,15 @@ const Footer = () => {
                     <h3 className="mb-0">Our Products</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start" >
-                    <a className="mb-2" href={`${base_url}/employeeBenefit-portal`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Employee Benefits Portal (Phillip)</a>
+                    {/* <a className="mb-2" href={`${base_url}/employeeBenefit-portal`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Employee Benefits Portal (Phillip)</a> */}
                     <a className="mb-2" href={`${base_url}/broker-one`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>BrokerOne Solution</a>
                     <a className="mb-2" href={`${base_url}/flex-benefit`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Flex Benefits System</a>
                     <a className="mb-2" href={`${base_url}/quote-master`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>QuoteMaster360</a>
+                    <a className="mb-2" href={`${base_url}/retailSolution-product`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Retail Solution</a>
                   </div>
                 </div>
                 {/* Our Solutions */}
-                <div className="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                {/* <div className="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
                   <div className="section-title section-title-sm position-relative pb-3 mb-4">
                     <h3 className="mb-0">Our Solutions</h3>
                   </div>
@@ -82,7 +83,7 @@ const Footer = () => {
                     <a className="mb-2" href={`${base_url}/employee-benefit`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Employee Benefits Platform (ZoyaCube)</a>
                     <a className="mb-2" href={`${base_url}/retail-solution`} style={{ color: '#537ed2' }}><i className="bi bi-arrow-right text-primary me-2"></i>Retail Solutions</a>
                   </div>
-                </div>
+                </div> */}
 
 
                 {/* Contact Info */}

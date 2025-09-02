@@ -15,6 +15,7 @@ import EmployeeBenefitPortal from '../pages/EmployeeBenefitPortal';
 import BrokerOne from '../pages/BrokerOne';
 import FlexBenefits from '../pages/FlexBenefits';
 import QuoteMaster from '../pages/QuoteMaster';
+import RetailSolutionProduct from '../pages/RetailSolutionProduct';
 
 const Router = () => {
   return (
@@ -30,6 +31,8 @@ const Router = () => {
                     <Route path='/broker-one' element={<BrokerOne />} />
                     <Route path='/flex-benefit' element={<FlexBenefits />} />
                     <Route path='/quote-master' element={<QuoteMaster />} />
+                    <Route path='/retailSolution-product' element={<RetailSolutionProduct />} />
+
 
                     {/* Our Solutions */}
                     <Route path='/insuretech' element={<InsureTech />} />

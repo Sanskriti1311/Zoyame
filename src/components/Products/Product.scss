@@ -1,0 +1,97 @@
+.owl-item .feature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // background-color: #c0edf5; 
+    // background: linear-gradient(135deg, #ffd6d6, #ffb3b3);
+  // background: linear-gradient(135deg, #d6f5d6, #a8e6a3);
+  background: linear-gradient(135deg, #d6e0ff, #a3b3ff);
+  // background: linear-gradient(135deg, #f0d6ff, #d18aff);
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+  min-height: 500px; 
+}
+
+.owl-item.center .feature-card {
+  background: linear-gradient(135deg, #fff0d6, #ffc78f);  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card .card-content {
+  flex-grow: 1;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon-circle {
+  background: linear-gradient(135deg, #e9ecef, #fff);
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .slide-left,
+  .slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+  }
+  .slide-right {
+    transform: translateX(-50px);
+  }
+  .slide-left.visible,
+  .slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+.feature-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.bg-primary { background-color: #65518c; }
+.bg-success { background-color: #00acc1; }
+.bg-warning { background-color: #8dcf47; }
+
+.feature-section h6 {
+  margin-bottom: 8px;
+}
+.feature-section p {
+  margin: 0;
+}
+
+
+ .hover-animate:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    .hover-icon:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
